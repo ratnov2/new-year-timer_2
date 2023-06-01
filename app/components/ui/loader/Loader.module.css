@@ -19,6 +19,7 @@
 	display: grid;
 	place-items: center;
 	min-height: 100vh;
+	background-color: #FF006E;
 
 }
 .scene {

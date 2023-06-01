@@ -20,7 +20,7 @@ const Dashboard: FC = () => {
 		// }, 1000)
 		// return () => clearInterval(timer)
 	}, [])
-	useLoading()
+	//useLoading()
 
 	return (
 		<Layout title='Dashboard'>
@@ -29,7 +29,7 @@ const Dashboard: FC = () => {
 					alt='bg-img'
 					src={img}
 					className='absolute h-[100vh] w-[100vw]'
-					priority={true}
+					//priority={true}
 				/>
 				<div className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'>
 					<span className='text-[5rem] text-white'>
@@ -43,7 +43,7 @@ const Dashboard: FC = () => {
 					</span>
 				</div>
 			</div>
-			<Link href='/loader'>wqelfnewjqnfkje</Link>
+			<Link rel="preload" href='/loader'>wqelfnewjqnfkje</Link>
 		</Layout>
 	)
 	
