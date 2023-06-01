@@ -38,7 +38,7 @@ module.exports = {
 				'9xl': '9.2rem'
 			},
 			backgroundImage: {
-				'bg-1': "url('~/app/assets/img/img1.jpg')"
+				'bg-1': "url('~/app/assets/img/big.jpg')"
 			}
 		}
 	},

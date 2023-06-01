@@ -2,6 +2,7 @@ import React, { FC } from 'react'
 
 //import loader from './Loader.module.scss'
 import loader from './Loader.module.css'
+import Link from 'next/link'
 
 const Loader: FC = () => {
 	return (
@@ -25,6 +26,7 @@ const Loader: FC = () => {
 					</div>
 				</div>
 			</div>
+      <Link href='/'>wefknewfkjnefw</Link>
 		</div>
 	)
 }

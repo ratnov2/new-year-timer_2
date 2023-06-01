@@ -3,16 +3,19 @@ import { FC, useEffect, useState } from 'react'
 
 import Layout from '@/layout/Layout'
 import Loader from '@/ui/loader/Loader'
+import useLoading from '@/hooks/useLoading'
+import Link from 'next/link'
 
 const Dashboard: FC = () => {
 	const [date, setDate] = useState(new Date())
 
 	useEffect(() => {
-		const timer = setInterval(() => {
-			setDate(new Date())
-		}, 1000)
-		return () => clearInterval(timer)
+		// const timer = setInterval(() => {
+		// 	setDate(new Date())
+		// }, 1000)
+		// return () => clearInterval(timer)
 	}, [])
+	useLoading()
 
 	return (
 		<Layout title='Dashboard'>
@@ -27,9 +30,10 @@ const Dashboard: FC = () => {
 					<span className='text-[5rem] text-white'>
 						{date.getSeconds()}
 					</span>
-					<Loader />
+					
 				</div>
 			</div>
+			<Link href='/loader'>wqelfnewjqnfkje</Link>
 		</Layout>
 	)
 }
