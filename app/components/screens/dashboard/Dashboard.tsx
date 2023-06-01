@@ -48,8 +48,8 @@ const Dashboard: FC = () => {
 	)
 	
 }
-const DynamicHeader = dynamic(() => import('@/ui/loader/Loader'), {
-  loading: () => <p>Loading...</p>,
-});
+// const DynamicHeader = dynamic(() => import('@/ui/loader/Loader'), {
+//   loading: () => <p>Loading...</p>,
+// });
 
 export default Dashboard

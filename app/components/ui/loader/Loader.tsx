@@ -26,7 +26,6 @@ const Loader: FC = () => {
 					</div>
 				</div>
 			</div>
-      <Link href='/'>wefknewfkjnefw</Link>
 		</div>
 	)
 }
