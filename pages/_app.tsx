@@ -7,11 +7,11 @@ import Loader from '@/ui/loader/Loader'
 import LoadingScreen from '@/ui/loading-screen/LoadingScreen'
 
 import '@/assets/styles/globals.scss'
-// import {useBlockOverflow} from '@/hooks/useBlockOverflow'
+import {useBlockOverflow} from '@/hooks/useBlockOverflow'
 
 export default function App({ Component, pageProps }: AppProps) {
 	const [isLoading, setIsLoading] = useState(false)
-	// const {isHidden, setIsHidden} =useBlockOverflow(true)
+	const {isHidden, setIsHidden} =useBlockOverflow(true)
 	useEffect(() => {
 		Router.events.on('routeChangeStart', url => {
 			setIsLoading(true)
@@ -32,14 +32,14 @@ export default function App({ Component, pageProps }: AppProps) {
 	useEffect(() => {
 		setTimeout(() => {
 			setIsLoading2(true)
-			// setIsHidden(false)
+			setIsHidden(false)
 		}, 2000)
 	}, [])
 	
 	return (
 		<>
-			{/* {isLoading && <Loader />} */}
-			{/* {!isLoading2 && <LoadingScreen />} */}
+			{isLoading && <Loader />}
+			{!isLoading2 && <LoadingScreen />}
 			<Component {...pageProps} /> 
 		</>
 	)
