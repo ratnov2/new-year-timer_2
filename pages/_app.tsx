@@ -7,7 +7,7 @@ import Loader from '@/ui/loader/Loader'
 import LoadingScreen from '@/ui/loading-screen/LoadingScreen'
 
 import '@/assets/styles/globals.scss'
-import {useBlockOverflow} from '@/hooks/useBlockOverflow'
+// import {useBlockOverflow} from '@/hooks/useBlockOverflow'
 
 export default function App({ Component, pageProps }: AppProps) {
 	const [isLoading, setIsLoading] = useState(false)

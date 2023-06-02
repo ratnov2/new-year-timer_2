@@ -1,4 +1,4 @@
-import {useBlockOverflow} from '@/hooks/useBlockOverflow'
+// import {useBlockOverflow} from '@/hooks/useBlockOverflow'
 import style from './LoadingScreen.module.scss'
 import Loader from '../loader/Loader'
 
