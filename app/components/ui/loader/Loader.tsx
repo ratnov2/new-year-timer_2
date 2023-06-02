@@ -45,3 +45,4 @@ const Loader: FC = () => {
 }
 
 export default Loader
+
