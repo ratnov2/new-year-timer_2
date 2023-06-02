@@ -5,11 +5,6 @@ import Loader from '../loader/Loader'
 const LoadingScreen = () => {
 	return (
 		<div className={style.screen}>
-			{/* <div className={style.balls}>
-				<div className={style.ball_one}></div>
-        <div className={style.ball_two}></div>
-        <div className={style.ball_three}></div>
-			</div> */}
 			<Loader />
 		</div>
 	)
