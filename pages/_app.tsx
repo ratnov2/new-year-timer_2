@@ -38,8 +38,8 @@ export default function App({ Component, pageProps }: AppProps) {
 	
 	return (
 		<>
-			{/* {isLoading && <Loader />} */}
-			{!isLoading2 && <LoadingScreen />}
+			{isLoading && <Loader />}
+			{/* {!isLoading2 && <LoadingScreen />} */}
 			<Component {...pageProps} /> 
 		</>
 	)
