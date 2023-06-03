@@ -1,12 +1,11 @@
-import Dashboard from '@/screens/dashboard/Dashboard'
-import Loader from '@/ui/loader/Loader'
-import dynamic from 'next/dynamic'
-import { Suspense } from 'react'
+import Layout from '@/layout/Layout'
+
+import Main from '@/screens/main/Main'
 
 export default function Home() {
-	return <Dashboard />
+	return (
+		<Layout title='timer'>
+			<Main />
+		</Layout>
+	)
 }
-
-// const Dashboard = dynamic(() => import('@/screens/dashboard/Dashboard'), {
-// 	ssr: false
-// })

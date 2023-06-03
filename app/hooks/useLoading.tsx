@@ -14,7 +14,6 @@ const useLoading = () => {
 			setTimeout(() => {
 				setLoading(false)
 			}, 2000)
-		console.log('@@', loading)
 		router.events.on('routeChangeStart', handleStart)
 		router.events.on('routeChangeComplete', handleComplete)
 		router.events.on('routeChangeError', handleComplete)
